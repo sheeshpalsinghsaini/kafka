@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cab-booking-user
+  kafka:
+    consumer:
+      bootstrap-server: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      group-id: user-group
+server:
+  port: 9090

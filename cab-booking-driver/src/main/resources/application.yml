@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cab-booking-driver
+
+  kafka:
+    producer:
+      bootstrap-server: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+
+server:
+  port: 9091
